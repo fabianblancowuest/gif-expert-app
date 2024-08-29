@@ -1,12 +1,9 @@
 import { GifCard } from "./GifCard";
 import { useFetchGifs } from "../Hooks/useFetchGifs";
 import "./../../index.css";
-import { useState } from "react";
 
 export const GifGrid = ({ category, categories, setCategories }) => {
 	const { images, isLoading, noCategoria } = useFetchGifs(category);
-
-	console.log(noCategoria);
 
 	const handleRemove = (event) => {
 		const filteredCategories = categories.filter(
