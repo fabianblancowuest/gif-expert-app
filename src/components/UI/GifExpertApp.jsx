@@ -19,14 +19,16 @@ export const GifExpertApp = () => {
 			<header className="header">
 				<h1 className="title">Gif Expert App</h1>
 				<img
-					className="giphy-title"
-					src="/src/assets/images/PoweredBy_640_Horizontal_Light-Backgrounds_With_Logo.gif"
-				></img>
-				<img
 					className="giphy-header"
-					src="/src/assets/images/giphy/horizontal_animado_grande.gif"
+					src="/src/assets/images/giphy/vertical_animado_chico.gif"
+					alt="Logo Giphy Vertical"
 				></img>
 				<AddCategory onNewCategory={onAddCategory} />
+				<img
+					className="giphy-busqueda"
+					src="/src/assets/images/giphy/horizontal_colorido_grande.png"
+					alt="Logo Giphy Horizontal"
+				></img>
 			</header>
 			<main className="main">
 				{!categories.length && (
