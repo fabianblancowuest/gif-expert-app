@@ -7,7 +7,7 @@ export const Footer = () => {
 				Created by <strong>Fabián Blanco Wuest &#169;</strong>
 				<img
 					className="footer-img"
-					src="/src/assets/images/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"
+					src="/src/assets/images/giphy/horizontal_animado_chico.gif"
 				></img>
 			</span>
 		</footer>

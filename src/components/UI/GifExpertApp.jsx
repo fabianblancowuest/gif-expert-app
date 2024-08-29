@@ -24,7 +24,7 @@ export const GifExpertApp = () => {
 				></img>
 				<img
 					className="giphy-header"
-					src="/src/assets/images/PoweredBy_640_Horizontal_Light-Backgrounds_With_Logo.gif"
+					src="/src/assets/images/giphy/horizontal_animado_grande.gif"
 				></img>
 				<AddCategory onNewCategory={onAddCategory} />
 			</header>
