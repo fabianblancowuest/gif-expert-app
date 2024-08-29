@@ -14,6 +14,30 @@ body {
 	flex-direction: column;
 }
 
+.header {
+	position: relative;
+}
+
+.title {
+	margin-top: 50px;
+}
+
+.giphy-title {
+	width: 100px;
+	border-radius: 5px;
+	display: block;
+	margin: -10px auto 20px auto;
+	display: none;
+}
+
+.giphy-header {
+	width: 180px;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	border-radius: 5px;
+}
+
 /* Contenido principal */
 .main {
 	display: flex;
@@ -101,11 +125,11 @@ h2 {
 	font-size: 1.5rem;
 }
 
-h3 {
+.titulo-categoria {
+	margin-top: 40px;
 	font-size: 3rem;
+	max-width: 42vw;
 	text-transform: capitalize;
-	/* margin-bottom: 5px; */
-	/* text-align: center; */
 }
 
 /* Secciones */
@@ -219,15 +243,24 @@ h3 {
 	padding: 0;
 }
 
-.footer span {
+.footer-text {
 	background-color: rgb(224, 224, 224);
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 15px 0;
-	text-align: center;
 	font-size: 0.9rem;
 }
 
 .footer strong {
 	background-color: inherit;
 	font-weight: bold;
+	margin-left: 8px;
+}
+
+.footer-img {
+	display: inline-block;
+	width: 100px;
+	margin-left: 8px;
+	border-radius: 5px;
 }
