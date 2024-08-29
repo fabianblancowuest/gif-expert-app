@@ -1,0 +1,233 @@
+* {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: rgb(234, 234, 234);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.section {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+/* Contenido principal */
+.main {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 50px;
+}
+/* Titulo */
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* Contendedor input + botón busqueda */
+.contenedor-busqueda {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto 50px auto;
+}
+
+@media (max-width: 900px) {
+	.contenedor-busqueda {
+		width: 90%;
+	}
+}
+
+/* Búsqueda */
+input {
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid rgb(97, 32, 158);
+	color: black;
+	font-size: 1.2rem;
+	outline: none;
+	padding: 10px 15px;
+	padding: 10px 50px 10px 15px; /* Ajustar el padding derecho para el botón */
+	width: calc(100% - 30px); /*
+	display: block;
+	/* margin: 10px auto 20px auto; */
+}
+
+/* Botón busqueda, es una ímagen con un evento click */
+.icono-busqueda {
+	padding: 5px 8px;
+	width: 30px;
+	position: absolute;
+	/* top: 0.1px; */
+	/* right: 0; */
+	right: 2px;
+	top: 2px;
+	bottom: 0;
+	/* border: 1px solid rgb(97, 32, 158); */
+	background-color: white;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+}
+
+.mensaje-bienvenida {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	input {
+		width: 90%;
+	}
+
+	.mensaje-bienvenida {
+		width: 90%;
+		text-align: center;
+	}
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 3rem;
+	text-transform: capitalize;
+	/* margin-bottom: 5px; */
+	/* text-align: center; */
+}
+
+/* Secciones */
+.card-grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* Sección Individual */
+.card {
+	align-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	overflow: hidden;
+	height: fit-content;
+}
+
+.card p {
+	background-color: white;
+	flex: 1;
+	font-size: 1rem;
+	max-width: 250px;
+	margin-top: 5px;
+	padding: 5px 20px 0px 20px;
+	text-align: center;
+}
+
+.card img {
+	width: 250px;
+}
+
+.categoria {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 45vw;
+	min-height: 100vh;
+	position: relative;
+	border: 0.5px solid rgba(97, 32, 158, 0.1);
+	border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+	.categoria {
+		width: 100%;
+	}
+
+	.card img {
+		width: 300px;
+	}
+}
+
+.header-card {
+	display: flex;
+	width: 100%;
+	background-color: transparent;
+	color: black;
+	position: relative;
+}
+
+.header-card h3 {
+	background-color: transparent;
+	font-size: 2.5rem;
+	width: 100%;
+	text-align: center;
+}
+
+.btn-eliminar {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	z-index: 1;
+}
+
+.ico-eliminar {
+	width: 50px;
+	border-radius: 30px;
+	border: none;
+	transition: 0.3s all ease-in-out;
+	opacity: 0.8;
+}
+
+.ico-eliminar:hover {
+	box-shadow: 2px 2px 4px rgb(97, 32, 158);
+	transform: scale(1.01);
+	opacity: 1;
+}
+
+.no-categoria {
+	font-size: 25px;
+	text-align: center;
+	padding: 50px 25px;
+	text-align: center;
+	width: 100%;
+	margin-top: -60px;
+}
+
+.footer {
+	padding: 0;
+}
+
+.footer span {
+	background-color: rgb(224, 224, 224);
+	display: block;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.footer strong {
+	background-color: inherit;
+	font-weight: bold;
+}
