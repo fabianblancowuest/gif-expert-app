@@ -26,6 +26,7 @@ export const GifGrid = ({ category, categories, setCategories }) => {
 						className="ico-eliminar"
 						src="/src/assets/images/icons/icono-eliminar-100.png"
 						name={category}
+						alt="Botón descargar"
 					></img>
 				</button>
 			</div>
