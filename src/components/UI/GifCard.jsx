@@ -23,7 +23,7 @@ export const GifCard = ({ url: { url }, title }, giphyPageUrl) => {
 			<p>{title}</p>
 			<img
 				className="img-footer-card"
-				src="/src/assets/images/giphy/horizontal_statico_chico.png"
+				src="/assets/images/giphy/horizontal_statico_chico.png"
 				alt="logo-giphy-chico"
 			></img>
 			{/* <a href={giphyPageUrl} target="_blank" rel="noopener noreferrer">

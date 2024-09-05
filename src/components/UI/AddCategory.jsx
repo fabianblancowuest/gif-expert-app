@@ -27,7 +27,7 @@ export const AddCategory = ({ onNewCategory }) => {
 				/>
 				<img
 					className="icono-busqueda"
-					src="/src/assets/images/icons/busqueda.png"
+					src="/assets/images/icons/busqueda.png"
 					alt="icono-busqueda"
 					onClick={handleSubmit}
 				></img>

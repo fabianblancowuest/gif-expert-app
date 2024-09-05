@@ -20,13 +20,13 @@ export const GifExpertApp = () => {
 				<h1 className="title">Gif Expert App</h1>
 				<img
 					className="giphy-header"
-					src="/src/assets/images/giphy/vertical_animado_chico.gif"
+					src="/assets/images/giphy/vertical_animado_chico.gif"
 					alt="Logo Giphy Vertical"
 				></img>
 				<AddCategory onNewCategory={onAddCategory} />
 				<img
 					className="giphy-busqueda"
-					src="/src/assets/images/giphy/horizontal_negro_chico.png"
+					src="/assets/images/giphy/horizontal_negro_chico.png"
 					alt="Logo Giphy Horizontal"
 				></img>
 			</header>
@@ -39,7 +39,7 @@ export const GifExpertApp = () => {
 						</h2>
 						<img
 							className="giphy-mensaje"
-							src="/src/assets/images/giphy/vertical_animado_grande.gif"
+							src="/assets/images/giphy/vertical_animado_grande.gif"
 							alt="Logo Giphy Vertical"
 						></img>
 					</div>
