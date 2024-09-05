@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&display=swap");
+
 * {
 	font-family: Helvetica, Arial, sans-serif;
 	background-color: rgb(234, 234, 234);
@@ -19,7 +21,18 @@ body {
 }
 
 .title {
-	margin-top: 60px;
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	letter-spacing: 3px;
+	/* font-weight: 400; */
+	/* font-style: normal; */
+	font-size: 40px;
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 32px;
+	}
 }
 
 .giphy-header {
@@ -98,7 +111,7 @@ input {
 	display: block;
 	margin: -30px auto 20px auto;
 	border-radius: 5px;
-	width: 150px;
+	width: 180px;
 }
 
 .contenedor-bienvenida {
@@ -109,19 +122,33 @@ input {
 	text-align: center;
 }
 
+.mensaje-bienvenida {
+	line-height: 1.5;
+}
+
 .giphy-mensaje {
 	border-radius: 5px;
 	height: 100px;
 }
 
 @media (max-width: 768px) {
-	input {
-		width: 90%;
+	.contenedor-bienvenida {
+		width: 95%;
 	}
 
 	.mensaje-bienvenida {
+		font-size: 1.3rem;
+		line-height: 1.5;
+	}
+
+	.giphy-mensaje {
+		height: 80px;
+	}
+}
+
+@media (max-width: 768px) {
+	input {
 		width: 90%;
-		text-align: center;
 	}
 }
 
@@ -254,6 +281,13 @@ h2 {
 	align-items: center;
 	padding: 15px 0;
 	font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+	.footer-text {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
 }
 
 .footer strong {
