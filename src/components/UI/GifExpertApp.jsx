@@ -34,7 +34,7 @@ export const GifExpertApp = () => {
 				{!categories.length && (
 					<div className="contenedor-bienvenida">
 						<h2 className="mensaje-bienvenida">
-							Bienvenido a Gif Expert App, busque su gifs, puede buscar
+							Bienvenido a Gif Expert App, busque sus gifs, puede buscar
 							cualquier tipo de gifs.
 						</h2>
 						<img
