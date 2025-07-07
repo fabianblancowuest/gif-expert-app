@@ -129,20 +129,19 @@ input {
 
 .mensaje-bienvenida {
 	line-height: 1.5;
-	font-size: 1.5;
-	position: relative;
+	/* font-size: 1.5; */
+	/* position: relative; */
 	font-weight: bold;
-	/* color: #fff; */
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
-.mensaje-bienvenida::before {
+/* .mensaje-bienvenida::before {
 	content: "";
 	position: absolute;
 	top: 0;
-	left: -75%;
+	left: -50%;
 	height: 100%;
-	width: 50%;
+	width: 10%;
 	background: linear-gradient(
 		120deg,
 		rgba(255, 255, 255, 0) 0%,
@@ -151,16 +150,16 @@ input {
 	);
 	transform: skewX(-20deg);
 	animation: shine 4s infinite;
-}
+} */
 
-@keyframes shine {
+/* @keyframes shine {
 	0% {
-		left: -75%;
+		left: 0%;
 	}
 	100% {
-		left: 125%;
+		left: 90%;
 	}
-}
+} */
 
 .giphy-mensaje {
 	border-radius: 5px;
