@@ -21,7 +21,7 @@ export const AddCategory = ({ onNewCategory }) => {
 			<div className="contenedor-busqueda">
 				<input
 					type="text"
-					placeholder="Buscar gifs"
+					placeholder="Ingrese cualquier texto"
 					value={inputValue}
 					onChange={onInputChange}
 				/>

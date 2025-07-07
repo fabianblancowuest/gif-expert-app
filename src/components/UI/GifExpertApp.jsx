@@ -17,7 +17,13 @@ export const GifExpertApp = () => {
 	return (
 		<div className="section">
 			<header className="header">
-				<h1 className="title">Gif Expert App</h1>
+				<h1 className="title">
+					<img
+						className="logo"
+						src="/assets/images/logo.svg"
+						alt="Logo de la app"
+					></img>
+				</h1>
 				{/* <img
 					className="giphy-header"
 					src="/assets/images/giphy/vertical_animado_chico.gif"
