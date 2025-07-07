@@ -18,17 +18,17 @@ export const GifExpertApp = () => {
 		<div className="section">
 			<header className="header">
 				<h1 className="title">Gif Expert App</h1>
-				<img
+				{/* <img
 					className="giphy-header"
 					src="/assets/images/giphy/vertical_animado_chico.gif"
 					alt="Logo Giphy Vertical"
-				></img>
+				></img> */}
 				<AddCategory onNewCategory={onAddCategory} />
-				<img
+				{/* <img
 					className="giphy-busqueda"
 					src="/assets/images/giphy/horizontal_negro_chico.png"
 					alt="Logo Giphy Horizontal"
-				></img>
+				></img> */}
 			</header>
 			<main className="main">
 				{!categories.length && (
@@ -37,11 +37,11 @@ export const GifExpertApp = () => {
 							Bienvenido a Gif Expert App, busque sus gifs, puede buscar
 							cualquier tipo de gifs.
 						</h2>
-						<img
+						{/* <img
 							className="giphy-mensaje"
 							src="/assets/images/giphy/vertical_animado_grande.gif"
 							alt="Logo Giphy Vertical"
-						></img>
+						></img> */}
 					</div>
 				)}
 				{categories.map((category) => (
