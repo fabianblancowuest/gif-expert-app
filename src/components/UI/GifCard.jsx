@@ -1,6 +1,6 @@
 import "../../index.css";
 
-export const GifCard = ({ url: { url }, title }, giphyPageUrl) => {
+export const GifCard = ({ url, title }) => {
 	// const handleDownload = async () => {
 	// 	try {
 	// 		const response = await fetch(url, { mode: "cors" });
@@ -21,11 +21,11 @@ export const GifCard = ({ url: { url }, title }, giphyPageUrl) => {
 		<div className="card">
 			<img className="img" src={url} alt={title} />
 			<p>{title}</p>
-			<img
+			{/* <img
 				className="img-footer-card"
 				src="/assets/images/giphy/horizontal_statico_chico.png"
 				alt="logo-giphy-chico"
-			></img>
+			></img> */}
 			{/* <a href={giphyPageUrl} target="_blank" rel="noopener noreferrer">
 				View on GIPHY
 			</a> */}
