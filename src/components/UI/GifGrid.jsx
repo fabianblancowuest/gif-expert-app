@@ -1,9 +1,11 @@
 import { GifCard } from "./GifCard";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 import "./../../index.css";
+import { useState } from "react";
 
 export const GifGrid = ({ category, categories, setCategories }) => {
 	const { images, isLoading, noCategoria } = useFetchGifs(category);
+	const [desvanecer, setDesvanecer] = useState(false);
 
 	const handleRemove = (event) => {
 		const filteredCategories = categories.filter(
@@ -16,13 +18,16 @@ export const GifGrid = ({ category, categories, setCategories }) => {
 	};
 
 	return (
-		<section className="categoria">
+		<section className={`categoria ${desvanecer}`}>
 			<div className="header-card">
 				<h3 className="titulo-categoria">{category}</h3>
 				<button
 					title="Eliminar Categoría"
 					className="btn-eliminar"
-					onClick={handleRemove}
+					onClick={(e) => {
+						setDesvanecer(true);
+						handleRemove(e);
+					}}
 				>
 					<img
 						className="ico-eliminar"

@@ -248,6 +248,10 @@ h2 {
 	border-radius: 10px;
 }
 
+.categoria-opaca {
+	opacity: 0.3;
+}
+
 @media (max-width: 768px) {
 	.categoria {
 		width: 100%;
@@ -291,7 +295,8 @@ h2 {
 	opacity: 0.8;
 }
 
-.ico-eliminar:hover {
+.ico-eliminar:hover,
+.ico-eliminar:active {
 	box-shadow: 2px 2px 4px rgb(97, 32, 158);
 	transform: scale(1.01);
 	opacity: 1;
