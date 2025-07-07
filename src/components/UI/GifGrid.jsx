@@ -10,7 +10,9 @@ export const GifGrid = ({ category, categories, setCategories }) => {
 			(item) => item !== event.target.name,
 		);
 
-		setCategories([...filteredCategories]);
+		setTimeout(() => {
+			setCategories([...filteredCategories]);
+		}, 200);
 	};
 
 	return (

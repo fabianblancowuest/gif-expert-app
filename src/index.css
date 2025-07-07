@@ -51,6 +51,7 @@ body {
 	justify-content: center;
 	gap: 30px;
 	margin-bottom: 50px;
+	max-width: 100%;
 }
 /* Titulo */
 h1 {
