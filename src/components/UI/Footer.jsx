@@ -8,7 +8,7 @@ export const Footer = () => {
 				<img
 					className="footer-img"
 					src="/assets/images/tenor/PB_tenor_logo_grey_vertical.svg"
-					alt="Logo Giphy Horizontal Chico"
+					alt="Logo Tenor Vertical"
 				></img>
 			</span>
 		</footer>

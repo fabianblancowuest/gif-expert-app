@@ -26,8 +26,8 @@ export const GifExpertApp = () => {
 				<AddCategory onNewCategory={onAddCategory} />
 				<img
 					className="giphy-busqueda"
-					src="/public/assets/images/tenor/PB_tenor_logo_grey_horizontal.svg"
-					alt="Logo Giphy Horizontal"
+					src="/assets/images/tenor/PB_tenor_logo_grey_horizontal.svg"
+					alt="Logo Tenor Horizontal"
 				></img>
 			</header>
 			<main className="main">
