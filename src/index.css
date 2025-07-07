@@ -277,17 +277,14 @@ h2 {
 	text-align: center;
 }
 
-.btn-eliminar {
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
-	position: absolute;
-	top: 10px;
-	right: 5px;
-	z-index: 1;
-}
-
 .ico-eliminar {
+	background-color: transparent;
+	border: none;
+	z-index: 1;
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	cursor: pointer;
 	width: 50px;
 	border-radius: 30px;
 	border: none;
@@ -296,7 +293,8 @@ h2 {
 }
 
 .ico-eliminar:hover,
-.ico-eliminar:active {
+.ico-eliminar:active,
+.ico-eliminar:focus {
 	box-shadow: 2px 2px 4px rgb(97, 32, 158);
 	transform: scale(1.01);
 	opacity: 1;

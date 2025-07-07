@@ -21,21 +21,18 @@ export const GifGrid = ({ category, categories, setCategories }) => {
 		<section className={`categoria ${desvanecer}`}>
 			<div className="header-card">
 				<h3 className="titulo-categoria">{category}</h3>
-				<button
+				<img
 					title="Eliminar Categoría"
-					className="btn-eliminar"
+					// className="btn-eliminar"
 					onClick={(e) => {
 						setDesvanecer(true);
 						handleRemove(e);
 					}}
-				>
-					<img
-						className="ico-eliminar"
-						src="/assets/images/icons/icono-eliminar-100.png"
-						name={category}
-						alt="Botón descargar"
-					></img>
-				</button>
+					className="ico-eliminar"
+					src="/assets/images/icons/icono-eliminar-100.png"
+					name={category}
+					alt="Botón descargar"
+				></img>
 			</div>
 			<div>
 				{isLoading && <h2>Cargando...</h2>}
