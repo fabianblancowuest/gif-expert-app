@@ -129,6 +129,37 @@ input {
 
 .mensaje-bienvenida {
 	line-height: 1.5;
+	font-size: 1.5;
+	position: relative;
+	font-weight: bold;
+	/* color: #fff; */
+	overflow: hidden;
+}
+
+.mensaje-bienvenida::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -75%;
+	height: 100%;
+	width: 50%;
+	background: linear-gradient(
+		120deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.5) 50%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	transform: skewX(-20deg);
+	animation: shine 4s infinite;
+}
+
+@keyframes shine {
+	0% {
+		left: -75%;
+	}
+	100% {
+		left: 125%;
+	}
 }
 
 .giphy-mensaje {
