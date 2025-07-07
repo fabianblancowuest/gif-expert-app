@@ -24,11 +24,11 @@ export const GifExpertApp = () => {
 					alt="Logo Giphy Vertical"
 				></img> */}
 				<AddCategory onNewCategory={onAddCategory} />
-				{/* <img
+				<img
 					className="giphy-busqueda"
-					src="/assets/images/giphy/horizontal_negro_chico.png"
+					src="/public/assets/images/tenor/PB_tenor_logo_grey_horizontal.svg"
 					alt="Logo Giphy Horizontal"
-				></img> */}
+				></img>
 			</header>
 			<main className="main">
 				{!categories.length && (
